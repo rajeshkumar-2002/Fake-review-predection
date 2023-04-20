@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+Gunicorn
+>>>>>>> 29ef297e83651da5646429447adc255267041f8b
 absl-py==1.4.0
 altgraph==0.17.3
 asttokens==2.2.1
@@ -55,15 +59,24 @@ ibm-cos-sdk==2.12.0
 ibm-cos-sdk-s3transfer==2.12.0
 ibm-db==3.1.3
 idna==3.4
+<<<<<<< HEAD
 ipykernel==6.19.4
 ipython==8.7.0
+=======
+ipykernel
+ipython
+>>>>>>> 29ef297e83651da5646429447adc255267041f8b
 itsdangerous==2.1.2
 jedi==0.18.2
 Jinja2==3.1.2
 jmespath==0.10.0
 joblib==1.2.0
 jupyter_client==7.4.8
+<<<<<<< HEAD
 jupyter_core==5.1.2
+=======
+jupyter_core
+>>>>>>> 29ef297e83651da5646429447adc255267041f8b
 keras==2.11.0
 kiwisolver==1.4.4
 korean-lunar-calendar==0.3.1
@@ -72,6 +85,7 @@ lightgbm==3.3.5
 LunarCalendar==0.0.9
 Markdown==3.4.1
 MarkupSafe==2.1.1
+<<<<<<< HEAD
 matplotlib==3.6.2
 matplotlib-inline==0.1.6
 mpmath==1.3.0
@@ -79,11 +93,24 @@ nest-asyncio==1.5.6
 networkx==3.0
 nltk==3.8.1
 numpy==1.23.4
+=======
+matplotlib
+matplotlib-inline==0.1.6
+mpmath==1.3.0
+nest-asyncio==1.5.6
+networkx
+nltk==3.8.1
+numpy
+>>>>>>> 29ef297e83651da5646429447adc255267041f8b
 oauthlib==3.2.2
 opencv-python==4.6.0.66
 opt-einsum==3.3.0
 packaging==21.3
+<<<<<<< HEAD
 pandas==1.5.1
+=======
+pandas
+>>>>>>> 29ef297e83651da5646429447adc255267041f8b
 parso==0.8.3
 patsy==0.5.3
 pefile==2022.5.30
@@ -109,16 +136,24 @@ pyparsing==3.0.9
 python-dateutil==2.8.2
 python-http-client==3.3.7
 pytz==2022.5
+<<<<<<< HEAD
 pywin32==305
 pywin32-ctypes==0.2.0
+=======
+>>>>>>> 29ef297e83651da5646429447adc255267041f8b
 pyzmq==24.0.1
 regex==2022.10.31
 requests==2.28.1
 requests-oauthlib==1.3.1
 rsa==4.9
 s3transfer==0.6.0
+<<<<<<< HEAD
 scikit-learn==1.1.3
 scipy==1.9.3
+=======
+scikit-learn
+scipy
+>>>>>>> 29ef297e83651da5646429447adc255267041f8b
 seaborn==0.12.2
 sendgrid==6.9.7
 setuptools-git==1.2
@@ -128,20 +163,33 @@ SQLAlchemy==1.4.42
 stack-data==0.6.2
 starkbank-ecdsa==2.2.0
 statsmodels==0.13.2
+<<<<<<< HEAD
 sympy==1.11.1
+=======
+sympy
+>>>>>>> 29ef297e83651da5646429447adc255267041f8b
 tabulate==0.9.0
 tensorboard==2.11.2
 tensorboard-data-server==0.6.1
 tensorboard-plugin-wit==1.8.1
 tensorflow==2.11.0
 tensorflow-estimator==2.11.0
+<<<<<<< HEAD
 tensorflow-intel==2.11.0
+=======
+tensorflow-intel
+>>>>>>> 29ef297e83651da5646429447adc255267041f8b
 tensorflow-io-gcs-filesystem==0.30.0
 termcolor==2.2.0
 textblob==0.17.1
 threadpoolctl==3.1.0
+<<<<<<< HEAD
 torch==2.0.0
 torchvision==0.15.1
+=======
+torch
+torchvision
+>>>>>>> 29ef297e83651da5646429447adc255267041f8b
 tornado==6.2
 tqdm==4.64.1
 traitlets==5.8.0
@@ -152,4 +200,8 @@ wcwidth==0.2.5
 Werkzeug==2.2.2
 wordcloud==1.8.2.2
 wrapt==1.14.1
+<<<<<<< HEAD
 xgboost==1.7.3
+=======
+xgboost
+>>>>>>> 29ef297e83651da5646429447adc255267041f8b
