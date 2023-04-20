@@ -1,0 +1,252 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+
+            <h2 class="text-center">Fake Review Prediction using <b>ML</b></h2>
+
+            <div style="padding-top: 40px;">
+                <p data-bs-toggle="collapse" href="#introduction" style="cursor: pointer" aria-expanded="false"
+                    aria-controls="introduction">What is Fake Review Prediction ?</p>
+
+                <div class="collapse" id="introduction">
+                    <div class="card shadow card-body">
+                        <p class="paragraphclr">
+                            Fake review prediction is an important task in the digital era where businesses rely heavily
+                            on
+                            customer feedback to drive their sales and reputation. With the rise of e-commerce and
+                            online
+                            platforms, consumers have access to an abundance of product and service reviews, which they
+                            use
+                            as are ference before making a purchase. However, not all reviews are genuine, and some are
+                            written by individuals with the intention of manipulating the opinions of potential
+                            customers.
+                            This is where fake review prediction comes in, as it helps identify and remove fake reviews
+                            that
+                            may influence the decision of potential customers, and help businesses and websites to
+                            maintain
+                            the integrity of their reviews. The task of fake review prediction is typically done using
+                            machine learning , which analyze the text of reviews and classify them as fake or genuine
+                            based
+                            on various features such as review rating and purchase. With the help of these techniques,
+                            fake
+                            review prediction can improve the overall user experience, by providing them with genuine
+                            reviews, and help businesses to maintain the integrity of their reviews.
+                        </p>
+                    </div>
+                    <br />
+                </div>
+            </div>
+
+            <p data-bs-toggle="collapse" href="#relatedLink" style="cursor: pointer" aria-expanded="true"
+                aria-controls="relatedLink">Related Link </p>
+            <div class="collapse" id="relatedLink">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h5>Dataset</h5>
+                        <div class="paddl50">
+                            <table>
+                                <tr>
+                                    <td><b>Source</b></td>
+                                    <td></td>
+                                    <td class="paragraphclr">Kaggle</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Description</b></td>
+                                    <td></td>
+                                    <td>
+                                        <p class="paragraphclr">
+                                            The Amazon reviews dataset consists of reviews from amazon. The data span a
+                                            period of 18 years, including ~35 million reviews up to March 2013. Reviews
+                                            include product and user information, ratings, and a plaintext review. For
+                                            moreinformation, please refer to the following paper: J. McAuley and J.
+                                            Leskovec.Hidden factors and hidden topics: understanding rating dimensions
+                                            withreviewtext. RecSys, 2013.
+                                        </p>
+                                        <p class="paragraphclr">
+                                            The Amazon reviews polarity dataset is constructed by taking review score 1
+                                            and 2 as negative, and 4 and 5 as positive. Samples of score 3 is ignored.
+                                            Inthe dataset, class 1 is the negative and class 2 is the positive.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><b>Link</b></td>
+                                    <td></td>
+                                    <td><a href="https://www.kaggle.com/datasets/kritanjalijain/amazon-reviews"
+                                            class="link-primary">Dataset</a></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <br />
+                        <h5>Code</h5>
+                        <div class="paddl50">
+                            <table>
+                                <tr>
+                                    <td><b>Source</b></td>
+                                    <td></td>
+                                    <td class="paragraphclr">Github</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Link</b></td>
+                                    <td></td>
+                                    <td><a href="#" class="link-primary">Github</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <br />
+            </div>
+
+            <div class="infoclass">
+                <h3>Information on the Classifier</h3>
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h6>About Classifier</h6>
+                        <div class="paddl50">
+                            <table>
+                                <tr>
+                                    <td><b>Model</b></td>
+                                    <td></td>
+                                    <td class="paragraphclr">Support Vector Machine(SVM)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Vectorizer</b></td>
+                                    <td></td>
+                                    <td class="paragraphclr">Term Frequency-Inverse Document Frequency (TF-IDF)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Test-Tain splitting</b></td>
+                                    <td></td>
+                                    <td class="paragraphclr">70%-30%</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Spelling Correction Library</b></td>
+                                    <td></td>
+                                    <td class="paragraphclr">TextBlob</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Stemmer</b></td>
+                                    <td></td>
+                                    <td class="paragraphclr">PorterStemmer</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <br />
+                        <h6>Evaluation Results</h6>
+                        <div class="paddl50">
+                            <table>
+                                <tr>
+                                    <td><b>Accuracy</b></td>
+                                    <td></td>
+                                    <td class="paragraphclr">{{Data['Accuracy']}}</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Precision</b></td>
+                                    <td></td>
+                                    <td class="paragraphclr">{{Data['Precision']}}</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Recall</b></td>
+                                    <td></td>
+                                    <td class="paragraphclr">{{Data['Recall']}}</td>
+                                </tr>
+                                <tr>
+                                    <td><b>F-1 Score</b></td>
+                                    <td></td>
+                                    <td class="paragraphclr">{{Data['F1']}}</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="classgraph" style="width: 530px;">
+                <h3>Graph's</h3>
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <p>Confusion Matrix - SVM</p>
+                            <img src="../static/images/Confusion_Matrix.png" alt="Confusion_Matrix">
+                        </div>
+                        <div class="carousel-item">
+                            <p>ROC Curve - SVM</p>
+                            <img src="../static/images/ROC_Curve.png" alt="Genuine_And_Fake_Percentage">
+                        </div>
+                        <div class="carousel-item">
+                            <p>Precision Recall Curve - SVM</p>
+                            <img src="../static/images/Precision_Recall_Curve.png" alt="Genuine_And_Fake_Percentage">
+                        </div>
+                        <div class="carousel-item">
+                            <p>Precision Recal VS ROC Curve - SVM</p>
+                            <img src="../static/images/Precision_Recal_VS_ROC_Curve.png"
+                                alt="Genuine_And_Fake_Percentage">
+                        </div>
+                        <div class="carousel-item">
+                            <p>Genuine And Fake Percentage</p>
+                            <img src="../static/images/Genuine_And_Fake_Percentage.png"
+                                alt="Genuine_And_Fake_Percentage">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" style="color:black" type="button"
+                        data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <br />
+
+            <h4>Fake Review Classifier</h4>
+            <p>Enter Review:</p>
+            <form action="{{ url_for('predict') }}" method="POST">
+                <div class="form-floating">
+                    <textarea type="email" class="form-control" style="height:130px" id="floatingInput"
+                        placeholder="Enter the Review" name="review" required></textarea>
+                </div>
+                <br />
+                <button type="submit" class="btn btn-primary" value="Predict" id="check-review-button">Check
+                    Review</button>
+            </form>
+
+            <br />
+            <p>If you like to use the product page url <a href="/appurl" class="link-primary">Click here</a></p>
+
+            {% if prediction %}
+
+            <div class="modal" id="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Result</h5>
+                            <button type="button" id="close-modal" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>{{ prediction }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="../static/Javascript/index.js"></script>
+
+            {% endif %}
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

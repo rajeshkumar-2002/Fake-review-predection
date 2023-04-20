@@ -2,6 +2,7 @@ import pickle
 import string
 import nltk
 import eli5
+import json
 nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('porter_test')
@@ -29,7 +30,14 @@ def add_cors_headers(response):
     response.headers['Access-Control-Allow-Headers'] = 'Content-Type'
     return response
 
-cred = credentials.Certificate("serviceAccountKey.json")
+# Fetch the serviceAccountKey.json file from Github
+url = 'https://raw.githubusercontent.com/rajeshkumar-2002/Fake-review-predection/main/server/serviceAccountKey.json'
+response = requests.get(url)
+content = response.content.decode('utf-8')
+# Load the file content into a JSON object
+json_data = json.loads(content)
+
+cred = credentials.Certificate(json_data)
 firebase_admin.initialize_app(cred, {
     'storageBucket': 'fake-review-prediction.appspot.com'
 })

@@ -167,7 +167,10 @@ function App() {
                         </td>
                         <td></td>
                         <td>
-                          <a href="#" className="link-primary">
+                          <a
+                            href="https://github.com/rajeshkumar-2002/Fake-review-predection"
+                            className="link-primary"
+                          >
                             Github
                           </a>
                         </td>

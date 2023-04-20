@@ -1,0 +1,41 @@
+.formClass {
+    max-width: 60%;
+}
+
+.paddl50 {
+    padding-left: 50px;
+}
+
+table tr td:empty {
+    width: 50px;
+}
+
+table tr td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    vertical-align: top;
+}
+
+.paragraphclr {
+    color: #605f5f;
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.infoclass {
+    padding-top: 0px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: 530px;
+    height: 440px;
+}
+
+.classgraph {
+    padding-top: 30px;
+}
